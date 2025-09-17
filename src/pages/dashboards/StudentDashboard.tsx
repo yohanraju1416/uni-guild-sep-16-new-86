@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, Users, FileText, TrendingUp } from "lucide-react";
+import { StudentLeaderboard } from "@/components/leaderboard/StudentLeaderboard";
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
@@ -185,6 +186,9 @@ const StudentDashboard = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Student Leaderboard */}
+        <StudentLeaderboard />
 
         {/* Quick Actions */}
         <Card className="shadow-card border-0 bg-card/80 backdrop-blur-sm">

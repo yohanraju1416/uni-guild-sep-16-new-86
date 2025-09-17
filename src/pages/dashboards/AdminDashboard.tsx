@@ -14,6 +14,7 @@ import {
   UserCheck,
   AlertTriangle
 } from "lucide-react";
+import { StudentLeaderboard } from "@/components/leaderboard/StudentLeaderboard";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
@@ -200,6 +201,9 @@ const AdminDashboard = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Student Leaderboard */}
+        <StudentLeaderboard canEdit={true} />
 
         {/* Quick Actions */}
         <Card className="shadow-card border-0 bg-card/80 backdrop-blur-sm">

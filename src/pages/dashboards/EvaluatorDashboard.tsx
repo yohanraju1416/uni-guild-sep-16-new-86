@@ -11,6 +11,7 @@ import {
   AlertCircle,
   Star
 } from "lucide-react";
+import { StudentLeaderboard } from "@/components/leaderboard/StudentLeaderboard";
 
 const EvaluatorDashboard = () => {
   const assignedSubmissions = [
@@ -229,6 +230,9 @@ const EvaluatorDashboard = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Student Leaderboard */}
+        <StudentLeaderboard />
 
         {/* Quick Actions */}
         <Card className="shadow-card border-0 bg-card/80 backdrop-blur-sm">

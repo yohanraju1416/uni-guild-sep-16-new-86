@@ -22,6 +22,7 @@ import {
   Award,
   Eye
 } from "lucide-react";
+import { StudentLeaderboard } from "@/components/leaderboard/StudentLeaderboard";
 
 const SuperAdminDashboard = () => {
   const navigate = useNavigate();
@@ -379,6 +380,9 @@ const SuperAdminDashboard = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Student Leaderboard */}
+        <StudentLeaderboard canEdit={true} />
 
         {/* Interactive Quick Actions */}
         <Card className="shadow-card border-0 bg-card/80 backdrop-blur-sm">

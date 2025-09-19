@@ -367,7 +367,7 @@ const EventPortalPage = () => {
                           <Button 
                             variant="gradient" 
                             className="flex-1"
-                            onClick={() => handleRegistration(event)}
+                            onClick={() => navigate(`/dashboard/student/events/register?eventId=${event.id}&eventTitle=${encodeURIComponent(event.title)}`)}
                           >
                             Proceed to Registration
                           </Button>

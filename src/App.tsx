@@ -25,6 +25,7 @@ import EvaluatorProfilePage from "./pages/evaluator/EvaluatorProfilePage";
 import EvaluatorSettingsPage from "./pages/evaluator/EvaluatorSettingsPage";
 // Student Pages
 import EventPortalPage from "./pages/student/EventPortalPage";
+import EventRegistrationPage from "./pages/student/EventRegistrationPage";
 import UpcomingEventsPage from "./pages/student/UpcomingEventsPage";
 import OngoingEventsPage from "./pages/student/OngoingEventsPage";
 import PastEventsPage from "./pages/student/PastEventsPage";
@@ -58,6 +59,7 @@ const App = () => (
           {/* Student Routes */}
           <Route path="/dashboard/student" element={<StudentDashboard />} />
           <Route path="/dashboard/student/events" element={<EventPortalPage />} />
+          <Route path="/dashboard/student/events/register" element={<EventRegistrationPage />} />
           <Route path="/dashboard/student/upcoming" element={<UpcomingEventsPage />} />
           <Route path="/dashboard/student/ongoing" element={<OngoingEventsPage />} />
           <Route path="/dashboard/student/past" element={<PastEventsPage />} />
